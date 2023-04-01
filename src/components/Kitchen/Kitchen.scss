@@ -1,0 +1,112 @@
+.kitchen {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.kitchen__return-btn__inner {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 10vh;
+  background: var(--second-color);
+  width: auto;
+  position: fixed;
+  bottom: 0;
+  color: white;
+
+  &:hover {
+    svg,
+    .kitchen__return-btn-text {
+      cursor: pointer;
+      color: var(--main-color);
+    }
+  }
+}
+
+.kitchen__return-svg {
+  font-size: 20px;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  display: flex;
+  margin-right: 10px;
+}
+
+.kitchen__return-btn-text {
+  color: white;
+  display: block;
+  line-height: 1;
+  margin: 0;
+  font-size: 20px;
+}
+
+.kitchen__food {
+  background-color: var(--second-color);
+}
+
+.kitchen__food-inner {
+  height: 100%;
+  z-index: 0;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.kitchen__food-image-wrapper {
+  overflow: hidden;
+}
+
+.kitchen__food-image {
+  min-height: 30vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40%;
+  margin: 10px;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.kitchen__food-image-1 {
+  background-image: url('./../../assets/images/images-kitchen-main/asia-food.jpg');
+}
+
+.kitchen__food-image-2 {
+  background-image: url('./../../assets/images/images-kitchen-main/bowl-food.jpg');
+}
+
+.kitchen__food-image-3 {
+  background-image: url('./../../assets/images/images-kitchen-main/burger-food.jpg');
+}
+
+.kitchen__food-image-4 {
+  background-image: url('./../../assets/images/images-kitchen-main/kebab-food.jpg');
+}
+
+.kitchen__food-image-5 {
+  background-image: url('./../../assets/images/images-kitchen-main/sushi-food.jpg');
+}
+
+.kitchen__food-image__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(82, 63, 56, 0.7);
+
+  &:hover {
+    background-color: rgba(82, 63, 56, 0.9);
+  }
+}
