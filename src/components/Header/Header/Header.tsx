@@ -1,8 +1,9 @@
 /** @format */
 import "./Header.scss";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Button from "react-bootstrap/Button";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
+
 const Header = () => {
   const navigate = useNavigate();
 
